@@ -5,3 +5,6 @@
 React.js / Express / mySQL
 
 🥔🧅🥕🧄🍌🥛🌶🍄🧻🧴
+
+초기 구상 (오븐)
+https://ovenapp.io/project/ANea6OnbMFSD7IAYfQYcjghigvmQdh7d#vcqWx
