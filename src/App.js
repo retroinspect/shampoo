@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component} from 'react';
 import { Router, Route } from 'react-router';
-import Header from './components/Header'
-import ShoppingList from './containers/ShoppingList';
+import Header from './components/header/Header'
+import ShoppingList from './components/shoppingList/ShoppingList';
 import Settings from './containers/Settings';
 import Record from './containers/Record';
 
@@ -24,15 +24,20 @@ const theme = createMuiTheme({
     }
 });
 
-function App() {
-  return (
-    <ThemeProvider theme={theme} className="App">
-        <Header/>
-        <Route exact path="/"><ShoppingList></ShoppingList></Route>
-        <Route exact path="/Record"><Record></Record></Route>
-        <Route exact path="/Settings"><Settings></Settings></Route>
-    </ThemeProvider>
-  );
+class App extends Component {
+
+  render() 
+  {
+
+    return (
+      <ThemeProvider theme={theme} className="App">
+          <Header/>
+          <Route exact path="/"><ShoppingList/></Route>
+          <Route exact path="/Record"><Record></Record></Route>
+          <Route exact path="/Settings"><Settings></Settings></Route>
+      </ThemeProvider>
+    );
+  }
 }
 
 export default App;

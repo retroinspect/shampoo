@@ -26,7 +26,7 @@ const Settings = () => {
 
     return (
         <div className="container">
-            <Typography variant="h5" className = "center">
+            <Typography variant="h6" className = "center">
                 2020 SPARCS 신입생 프로젝트
             </Typography>
             <Typography variant="h5" className="center">

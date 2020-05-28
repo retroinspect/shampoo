@@ -39,9 +39,9 @@ export default function Header() {
                 textColor="secondary"
                 aria-label="icon label tabs"
             >
-                <Tab component={NavLink} to="/" icon={<ShoppingCartIcon />} label="쇼핑리스트" />
-                <Tab component={NavLink} to="/Record" icon={<HistoryIcon />} label="내역" />
-                <Tab component={NavLink} to="/Settings" icon={<SettingsIcon />} label="설정" />
+                <Tab component={NavLink} exact to="/" icon={<ShoppingCartIcon />} label="쇼핑리스트" />
+                <Tab component={NavLink} exact to="/Record" icon={<HistoryIcon />} label="내역" />
+                <Tab component={NavLink} exact to="/Settings" icon={<SettingsIcon />} label="설정" />
             </Tabs>
         </Paper>
     );
